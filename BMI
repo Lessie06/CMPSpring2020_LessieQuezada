@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+      Scanner keyboard= new Scanner(System.in);
+      System.out.println("Enter your name");
+      System.out.println("Enter your weight in pounds");
+      System.out.println("Enter your height in inches");
+      String name1=keyboard.next();
+      double weight1=keyboard.nextDouble();
+      double inches1=keyboard.nextDouble();
+      double inchessqre=inches1*inches1;
+      double bmi1= weight1*703/inchessqre;
+      System.out.println(name1 + "    " + bmi1);
+      
+      System.out.println("Enter your name");
+      System.out.println("Enter your weight in pounds");
+      System.out.println("Enter your height in inches");
+      String name2=keyboard.next();
+      double weight2=keyboard.nextDouble();
+      double inches2=keyboard.nextDouble();
+      double inchessqre2=inches2*inches2;
+      double bmi2= weight2*703/inchessqre2;
+      
+      System.out.println(name2 + "    " + bmi2);
+
+      System.out.println("Enter your name");
+      System.out.println("Enter your weight in pounds");
+      System.out.println("Enter your height in inches");
+      String name3=keyboard.next();
+      double weight3=keyboard.nextDouble();
+      double inches3=keyboard.nextDouble();
+      double inchessqre3=inches3*inches3;
+      double bmi3= weight3*703/inchessqre3;
+      System.out.println(name3 + "    " + bmi3);
+      
+      
+      
+    }
+}

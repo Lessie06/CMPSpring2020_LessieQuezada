@@ -1,0 +1,41 @@
+import java.util.Scanner;
+import java.util.Random;
+public class NumberGuesser {
+    public static void main(String args[]) {
+      Scanner keyboard= new Scanner(System.in);
+      System.out.println("This is a number guesser game");
+     
+      Random rand=new Random();
+      int numToGuess= rand.nextInt(50);
+      int numOfTries= 3;
+      int i=0;
+      
+      for(i=0; i<3; i++){
+        System.out.println("Choose a number between 1 and 50");
+        int guess=keyboard.nextInt();
+        numOfTries++;
+      
+            if (guess==numToGuess){
+                 System.out.println("You guessed the correct number");
+                     break;
+      }
+             else if (guess<numToGuess){
+                    System.out.println("The number you guessed is too low. Try again.");
+      }
+     
+             else if (guess>numToGuess){
+                        System.out.println("The number you guessed is too high. Try again.");
+      }
+      
+    System.out.println("You Lose");
+         
+         
+      }
+     
+
+    }
+    
+    
+    }
+
+    

@@ -1,21 +1,22 @@
-//This program adds up the 10 natural numbers//
+//This program adds up the 10 natural numbers and also finds the average.//
 import java.util.Scanner;
 public class naturalNumbers {
     public static void main(String args[]) {
         Scanner keyboard=new Scanner(System.in);
-        int natNums=10;
+        float natNums=10;
         int count=1;
         int i=0;
-        
+        float average;
         
         while(count<=natNums){
            i=i+count;
            count++;
         }
-        
+        average=i/natNums;
      
 
        System.out.println("The sum of the first 10 natural numbers is: "+ i);
+       System.out.println("The average of the first 10 natural numbers is: " + average);
        
     }
 }

@@ -1,0 +1,21 @@
+//This program adds up the 10 natural numbers//
+import java.util.Scanner;
+public class naturalNumbers {
+    public static void main(String args[]) {
+        Scanner keyboard=new Scanner(System.in);
+        int natNums=10;
+        int count=1;
+        int i=0;
+        
+        
+        while(count<=natNums){
+           i=i+count;
+           count++;
+        }
+        
+     
+
+       System.out.println("The sum of the first 10 natural numbers is: "+ i);
+       
+    }
+}
